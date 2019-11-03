@@ -7,4 +7,5 @@ contract hotpotRegistry {
     function register() public {
         hotpots.push(msg.sender);
     }
+    func
 }
