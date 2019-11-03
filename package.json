@@ -11,6 +11,7 @@
   "keywords": [],
   "dependencies": {
     "@openzeppelin/contracts": "^2.4.0",
+    "express": "^4.17.1",
     "truffle": "^5.0.43",
     "truffle-hdwallet-provider": "^1.0.17"
   }
