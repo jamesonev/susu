@@ -1,0 +1,17 @@
+{
+  "name": "hotpot",
+  "version": "1.0.0",
+  "description": "defi fair lottery",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.4.0",
+    "truffle": "^5.0.43",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
