@@ -19,9 +19,9 @@ window.addEventListener('load', function () {
     if (typeof window.ethereum !== 'undefined') {
         ethereum.enable();
         account = ethereum.selectedAddress;
-        if (this.window.location == "http://localhost:8000/hotpot-frontend/login.html") {
-            this.window.location.href = './onboarding1.html';
-        }
+        // if (this.window.location == "http://localhost:8000/hotpot-frontend/login.html") {
+        //     this.window.location.href = './onboarding1.html';
+        // }
         registryAbi = [
             {
                 "inputs": [],
