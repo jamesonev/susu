@@ -79,7 +79,7 @@ contract hotpot {
         payout = 0;
         ended = false;
         random = blockhash(block.number - 1);
-        hotpotRegistry registry = hotpotRegistry(address(0xD5c2a262d536c341641DefB39A5ec734bee84D65));
+        hotpotRegistry registry = hotpotRegistry(address(0xE112148658ab6BD8e17DbE42F2935e7a919AfaA9));
         registry.register();
     }
     function deposit() public payable {
@@ -91,14 +91,6 @@ contract hotpot {
             msg.value == minInvestment,
             "Deposit must be equal to minInvestment."
         );
-        // require(
-        //     balances[msg.sender].add(msg.value) >= minInvestment,
-        //     "Deposit must be greater than or equal to minInvestment."
-        // );
-        // require(
-        //     balances[msg.sender].add(msg.value) <= maxInvestment,
-        //     "Deposit must be greater than or equal to maxInvestment."
-        // );
         require(
             numUsers < maxUsers,
             "This pool is already full."
@@ -125,7 +117,7 @@ contract hotpot {
         );
         require(
             !ended,
-            "Payout have already been completed"
+            "Payout has already been completed"
         );
         if(numUsers == 0){
             ended = true;
@@ -197,5 +189,11 @@ contract hotpot {
     }
     function getNumUsers() public view returns (uint) {
         return numUsers;
+    }
+    function getUserAtI(uint i) public view returns (address) {
+        return contributers[i];
+    }
+    function getBalanceOf(address user) public view returns (uint) {
+        return payouts[user];
     }
 }
