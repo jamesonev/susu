@@ -1,3 +1,4 @@
+
 // const Eth = require('ethjs');
 // const eth = new Eth(new Eth.HttpProvider('https://rinkeby.infura.io'));
 
@@ -38,6 +39,10 @@ window.addEventListener('load', function () {
                 "type": "function"
             }
         ]
+        if (ethereum.chainId !== "0x4") {
+            this.alert("Please change to Rinkeby test net");
+
+        }
 
 
     } else {
