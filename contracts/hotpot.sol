@@ -3,6 +3,7 @@ pragma solidity >=0.4.22 <0.6.0;
 // import "@openzeppelin/contracts/ownership/Ownable.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 import "./CEther.sol";
+import "./registry.sol";
 // import "github.com/compound-finance/compound-protocol/contracts/CEther.sol"; 
 
 
@@ -10,7 +11,7 @@ import "./CEther.sol";
 // on Mainnet? 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
 contract hotpot {
     using SafeMath for uint;
-    CEther ceth = CEther(address(0xd6801a1DfFCd0a410336Ef88DeF4320D6DF1883e));
+    // CEther ceth = CEther(address(0xd6801a1DfFCd0a410336Ef88DeF4320D6DF1883e));
     // mapping (address => uint) public balances;
     address payable[] contributers;
     mapping (address => uint) payouts;
@@ -78,6 +79,8 @@ contract hotpot {
         payout = 0;
         ended = false;
         random = blockhash(block.number - 1);
+        hotpotRegistry registry = hotpotRegistry(address(0xD5c2a262d536c341641DefB39A5ec734bee84D65));
+        registry.register();
     }
     function deposit() public payable {
         require(
@@ -100,7 +103,7 @@ contract hotpot {
             numUsers < maxUsers,
             "This pool is already full."
         );
-        ceth.mint();
+        // ceth.mint();
         contributers.push(msg.sender);
         numUsers = numUsers.add(1);
         // balances[msg.sender] = balances[msg.sender].add(msg.value);
@@ -144,7 +147,8 @@ contract hotpot {
         );
         uint amount = payouts[msg.sender];
         require(
-            ceth.redeem(amount) == 0,
+            true,
+            // ceth.redeem(amount) == 0,
             "withdrawal from Compound failed"
         );
         payouts[msg.sender] = 0;

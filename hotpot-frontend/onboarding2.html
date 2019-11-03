@@ -1,182 +1,206 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="./img/favicon.png" rel="shortcut icon"/>
-        <meta charset="utf-8"/>
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
-        <link href="./css/onboarding2.css" rel="stylesheet" type="text/css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
-        </script>
-        <script src="https://animaapp.s3.amazonaws.com/launchpad-static/launchpad.js">
-        </script>
-        <meta content="Launchpad by Anima" name="author">
-        </meta>
-    </head>
-    <body style="margin: 0;
+
+<head>
+    <link href="./img/favicon.png" rel="shortcut icon" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport" />
+    <link href="./css/onboarding2.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+    </script>
+    <script src="https://animaapp.s3.amazonaws.com/launchpad-static/launchpad.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <meta content="Launchpad by Anima" name="author">
+    </meta>
+</head>
+
+<body style="margin: 0;
  background: rgba(255, 255, 255, 1.0);">
-        <input id="anPageName" name="page" type="hidden" value="onboarding2"/>
-        <div class="onboarding2">
-            <div style="width: 375px; height: 100%; position:relative; margin:auto;">
-                <img anima-src="./img/onboarding2-circle@2x.png" class="circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                <div class="inviteotherstopar">
-                    Invite others to participate
-                </div>
-                <div class="phone">
-                    <img anima-src="./img/onboarding2-shadow@2x.png" class="shadow" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                    <img anima-src="./img/onboarding2-path-13@2x.png" class="path13" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                    <div class="group6">
-                        <img anima-src="./img/onboarding2-rectangle-25@2x.png" class="rectangle25" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                        <div class="rectangle25copy4">
-                        </div>
+    <input id="anPageName" name="page" type="hidden" value="onboarding2" />
+    <div class="onboarding2">
+        <div style="width: 375px; height: 100%; position:relative; margin:auto;">
+            <img anima-src="./img/onboarding2-circle@2x.png" class="circle"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+            <div class="inviteotherstopar">
+                Invite others to participate
+            </div>
+            <div class="phone">
+                <img anima-src="./img/onboarding2-shadow@2x.png" class="shadow"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                <img anima-src="./img/onboarding2-path-13@2x.png" class="path13"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                <div class="group6">
+                    <img anima-src="./img/onboarding2-rectangle-25@2x.png" class="rectangle25"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                    <div class="rectangle25copy4">
                     </div>
-                    <div class="rectangle25copy6">
-                        <div class="device">
-                            <div class="screen">
-                            </div>
-                        </div>
-                    </div>
-                    <img anima-src="./img/onboarding2-oval-12@2x.png" class="oval12" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
                 </div>
-                <div class="statusbarwhite">
-                    <div class="statusbarwhite1">
-                        <img anima-src="./img/create-new-address-copy-background.png" class="background" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                        <div class="charge">
-                            <div class="batteryicon">
-                                <img anima-src="./img/pool-shape@2x.png" class="shape" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                                <img anima-src="./img/create-new-address-charge@2x.png" class="charge1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                                <img anima-src="./img/onboarding3-@2x.png" class="image1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                            </div>
-                            <div class="a51">
-                                51%
-                            </div>
-                        </div>
-                        <img anima-src="./img/pool-info-bluetooth-icon@2x.png" class="bluetoothicon" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                        <div class="a941">
-                            9:41 AM
-                        </div>
-                        <img anima-src="./img/create-new-address-copy-wifi@2x.png" class="wifi" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                        <div class="tmobile">
-                            T-Mobile
-                        </div>
-                        <div class="signal">
-                            <img anima-src="./img/onboarding1-oval-1@2x.png" class="oval1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                            <img anima-src="./img/onboarding1-oval-1@2x.png" class="oval1copy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                            <img anima-src="./img/onboarding1-oval-1@2x.png" class="oval1copy2" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                            <img anima-src="./img/onboarding2-shape-2@2x.png" class="shape" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                            <img anima-src="./img/onboarding2-shape-2@2x.png" class="shape1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                <div class="rectangle25copy6">
+                    <div class="device">
+                        <div class="screen">
                         </div>
                     </div>
                 </div>
-                <div class="onboardingnav2">
-                    <div class="navigationbar">
-                    </div>
-                    <div class="navigationdots">
-                        <img anima-src="./img/onboarding2-right-dot@2x.png" class="leftdot" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                        <img anima-src="./img/onboarding1-left-dot@2x.png" class="middledot" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                        <img anima-src="./img/onboarding2-right-dot@2x.png" class="rightdot" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                    </div>
-                    <div class="skip">
-                        <div class="skip1">
-                            SKIP
+                <img anima-src="./img/onboarding2-oval-12@2x.png" class="oval12"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+            </div>
+            <div class="statusbarwhite">
+                <div class="statusbarwhite1">
+                    <img anima-src="./img/create-new-address-copy-background.png" class="background"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                    <div class="charge">
+                        <div class="batteryicon">
+                            <img anima-src="./img/pool-shape@2x.png" class="shape"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                            <img anima-src="./img/create-new-address-charge@2x.png" class="charge1"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                            <img anima-src="./img/onboarding3-@2x.png" class="image1"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
                         </div>
-                        <div class="bound">
-                        </div>
-                    </div>
-                    <div class="next">
-                        <div class="next1">
-                            NEXT
-                        </div>
-                        <div class="bound">
+                        <div class="a51">
+                            51%
                         </div>
                     </div>
-                </div>
-                <div class="createyourownpool">
-                    Create your own pool
-                </div>
-                <div class="onboarding" id="None">
-                    <div class="onboardings">
-                        ONBOARDINGS
+                    <img anima-src="./img/pool-info-bluetooth-icon@2x.png" class="bluetoothicon"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                    <div class="a941">
+                        9:41 AM
                     </div>
-                    <img anima-src="./img/create-new-address-copy-line-1.png" class="line" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <img anima-src="./img/create-new-address-copy-wifi@2x.png" class="wifi"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                    <div class="tmobile">
+                        T-Mobile
+                    </div>
+                    <div class="signal">
+                        <img anima-src="./img/onboarding1-oval-1@2x.png" class="oval1"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                        <img anima-src="./img/onboarding1-oval-1@2x.png" class="oval1copy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                        <img anima-src="./img/onboarding1-oval-1@2x.png" class="oval1copy2"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                        <img anima-src="./img/onboarding2-shape-2@2x.png" class="shape"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                        <img anima-src="./img/onboarding2-shape-2@2x.png" class="shape1"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                    </div>
                 </div>
             </div>
+            <div class="onboardingnav2">
+                <div class="navigationbar">
+                </div>
+                <div class="navigationdots">
+                    <img anima-src="./img/onboarding2-right-dot@2x.png" class="leftdot"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                    <img anima-src="./img/onboarding1-left-dot@2x.png" class="middledot"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                    <img anima-src="./img/onboarding2-right-dot@2x.png" class="rightdot"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+                </div>
+                <div class="skip">
+                    <div class="skip1">
+                        SKIP
+                    </div>
+                    <div class="bound">
+                    </div>
+                </div>
+                <div class="next">
+                    <div class="next1">
+                        NEXT
+                    </div>
+                    <div class="bound">
+                    </div>
+                </div>
+            </div>
+            <div class="createyourownpool">
+                Create your own pool
+            </div>
+            <div class="onboarding" id="None">
+                <div class="onboardings">
+                    ONBOARDINGS
+                </div>
+                <img anima-src="./img/create-new-address-copy-line-1.png" class="line"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+            </div>
         </div>
-        <!-- Scripts -->
-        <script>
-            anima_isHidden = function(e) {
-                if (!(e instanceof HTMLElement)) return !1;
-                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
-                return !1;
-            };
-            anima_loadAsyncSrcForTag = function(tag) {
-                var elements = document.getElementsByTagName(tag);
-                var toLoad = [];
-                for (var i = 0; i < elements.length; i++) {
-                    var e = elements[i];
-                    var src = e.getAttribute("src");
-                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
-                    if (loaded) continue;
-                    var asyncSrc = e.getAttribute("anima-src");
-                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
-                    if (anima_isHidden(e)) continue;
-                    toLoad.push(e);
+    </div>
+    <!-- Scripts -->
+    <script>
+        anima_isHidden = function (e) {
+            if (!(e instanceof HTMLElement)) return !1;
+            if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+            return !1;
+        };
+        anima_loadAsyncSrcForTag = function (tag) {
+            var elements = document.getElementsByTagName(tag);
+            var toLoad = [];
+            for (var i = 0; i < elements.length; i++) {
+                var e = elements[i];
+                var src = e.getAttribute("src");
+                var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                if (loaded) continue;
+                var asyncSrc = e.getAttribute("anima-src");
+                if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                if (anima_isHidden(e)) continue;
+                toLoad.push(e);
+            }
+            toLoad.sort(function (a, b) {
+                return anima_getTop(a) - anima_getTop(b);
+            });
+            for (var i = 0; i < toLoad.length; i++) {
+                var e = toLoad[i];
+                var asyncSrc = e.getAttribute("anima-src");
+                e.setAttribute("src", asyncSrc);
+            }
+        };
+        anima_pauseHiddenVideos = function (tag) {
+            var elements = document.getElementsByTagName("video");
+            for (var i = 0; i < elements.length; i++) {
+                var e = elements[i];
+                var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                var isHidden = anima_isHidden(e);
+                if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                    e.play();
+                } else if (isPlaying && isHidden) {
+                    e.pause();
                 }
-                toLoad.sort(function(a, b) {
-                    return anima_getTop(a) - anima_getTop(b);
-                });
-                for (var i = 0; i < toLoad.length; i++) {
-                    var e = toLoad[i];
-                    var asyncSrc = e.getAttribute("anima-src");
-                    e.setAttribute("src", asyncSrc);
-                }
-            };
-            anima_pauseHiddenVideos = function(tag) {
-                var elements = document.getElementsByTagName("video");
-                for (var i = 0; i < elements.length; i++) {
-                    var e = elements[i];
-                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
-                    var isHidden = anima_isHidden(e);
-                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
-                        e.play();
-                    } else if (isPlaying && isHidden) {
-                        e.pause();
-                    }
-                }
-            };
-            anima_loadAsyncSrc = function(tag) {
-                anima_loadAsyncSrcForTag("img");
-                anima_loadAsyncSrcForTag("iframe");
-                anima_loadAsyncSrcForTag("video");
-                anima_pauseHiddenVideos();
-            };
-            var anima_getTop = function(e) {
-                var top = 0;
-                do {
-                    top += e.offsetTop || 0;
-                    e = e.offsetParent;
-                } while (e);
-                return top;
-            };
+            }
+        };
+        anima_loadAsyncSrc = function (tag) {
+            anima_loadAsyncSrcForTag("img");
+            anima_loadAsyncSrcForTag("iframe");
+            anima_loadAsyncSrcForTag("video");
+            anima_pauseHiddenVideos();
+        };
+        var anima_getTop = function (e) {
+            var top = 0;
+            do {
+                top += e.offsetTop || 0;
+                e = e.offsetParent;
+            } while (e);
+            return top;
+        };
+        anima_loadAsyncSrc();
+        anima_old_onResize = window.onresize;
+        anima_new_onResize = undefined;
+        anima_updateOnResize = function () {
+            if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                anima_new_onResize = function (x) {
+                    if (anima_old_onResize != undefined) anima_old_onResize(x);
+                    anima_loadAsyncSrc();
+                };
+                window.onresize = anima_new_onResize;
+                setTimeout(function () {
+                    anima_updateOnResize();
+                }, 3000);
+            }
+        };
+        anima_updateOnResize();
+        setTimeout(function () {
             anima_loadAsyncSrc();
-            anima_old_onResize = window.onresize;
-            anima_new_onResize = undefined;
-            anima_updateOnResize = function() {
-                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
-                    anima_new_onResize = function(x) {
-                        if (anima_old_onResize != undefined) anima_old_onResize(x);
-                        anima_loadAsyncSrc();
-                    };
-                    window.onresize = anima_new_onResize;
-                    setTimeout(function() {
-                        anima_updateOnResize();
-                    }, 3000);
-                }
-            };
-            anima_updateOnResize();
-            setTimeout(function() {
-                anima_loadAsyncSrc();
-            }, 200);
-        </script>
-        <!-- End of Scripts -->
-    </body>
+        }, 200);
+    </script>
+    <!-- End of Scripts -->
+</body>
+
 </html>
