@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:700,400');
 
 @font-face {
-                          font-family: "Circular-Bold";
-                          src: url('../fonts/lineto-circular-pro-bold.ttf') format("truetype");
-                        }
-                        @font-face {
                           font-family: "Lato-Medium";
                           src: url('../fonts/Lato-Medium.ttf') format("truetype");
+                        }
+                        @font-face {
+                          font-family: "Circular-Bold";
+                          src: url('../fonts/lineto-circular-pro-bold.ttf') format("truetype");
                         }
                         
 .onboarding1 {

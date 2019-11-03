@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:700,400');
 
 @font-face {
-                          font-family: "Circular-Bold";
-                          src: url('../fonts/lineto-circular-pro-bold.ttf') format("truetype");
-                        }
-                        @font-face {
                           font-family: "Lato-Medium";
                           src: url('../fonts/Lato-Medium.ttf') format("truetype");
+                        }
+                        @font-face {
+                          font-family: "Circular-Bold";
+                          src: url('../fonts/lineto-circular-pro-bold.ttf') format("truetype");
                         }
                         
 .login {
@@ -365,14 +365,14 @@ div {
   -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
   transform           : rotate(0deg);
 }
-.login .buttonfacebook .continuewithwallet {
+.login .buttonfacebook .continuewithmetama {
   background-color    : rgba(255,255,255,0.0);
   top                 : 13px;
   height              : auto;
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 27px;
+  left                : 40px;
   -ms-transform       : rotate(0deg); /* IE 9 */
   -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
   transform           : rotate(0deg);
@@ -384,14 +384,14 @@ div {
   text-align          : center;
   line-height         : 20.0px;
 }
-.login .xxx {
+.login .hotpot {
   background-color    : rgba(255,255,255,0.0);
   top                 : 136px;
   height              : auto;
   width               : auto;
   position            : absolute;
   margin              : 0;
-  left                : 137px;
+  left                : 98px;
   -ms-transform       : rotate(0deg); /* IE 9 */
   -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
   transform           : rotate(0deg);
