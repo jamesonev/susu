@@ -11,7 +11,7 @@ import "./registry.sol";
 // on Mainnet? 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
 contract hotpot {
     using SafeMath for uint;
-    // CEther ceth = CEther(address(0xd6801a1DfFCd0a410336Ef88DeF4320D6DF1883e));
+    CEther ceth = CEther(address(0xd6801a1DfFCd0a410336Ef88DeF4320D6DF1883e));
     // mapping (address => uint) public balances;
     address payable[] contributers;
     mapping (address => uint) payouts;
@@ -104,6 +104,7 @@ contract hotpot {
             "This pool is already full."
         );
         // ceth.mint();
+        ceth.mint.value(msg.value)();
         contributers.push(msg.sender);
         numUsers = numUsers.add(1);
         // balances[msg.sender] = balances[msg.sender].add(msg.value);
@@ -118,6 +119,14 @@ contract hotpot {
     //     return msg.sender;
     //     // return 
     // }
+    function checkBalance() private view returns (uint) {
+        return ceth.balanceOf(address(this));
+    }
+    function withdrawCompound(
+        uint balance
+    ) private payable returns (uint) {
+        return ceth.redeem(balance);
+    }
     function doDrawing() public {
         require(
             block.number >= nextDrawBlock,
@@ -132,8 +141,15 @@ contract hotpot {
             emit DrawingEnded();
             return;
         }
-        payout /= internalPools;
         ended = true;
+        uint cethBalance = checkBalance();
+        //this call to redeem is not safe
+        require(
+            withdrawCompound(cethBalance) == 0,
+            // ceth.redeem(cethBalance) == 0,
+            "withdrawal from Compound failed"
+        );
+        payout = cethBalance / internalPools;
         for (uint i=0; i<internalPools; i++) {
             payouts[contributers[uint256(getRandom()) % numUsers]] += payout;
         }
